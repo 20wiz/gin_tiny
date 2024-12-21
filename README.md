@@ -1,11 +1,12 @@
 # Gin Tiny
 
 ## Description
-Gin Tiny is a lightweight web API built using the Gin framework in Go. It provides endpoints to create and retrieve models with timestamp functionality.
+Gin Tiny is a lightweight web API built using the Gin framework in Go. It provides endpoints to create and retrieve models with timestamp functionality. It utilizes in-memory caching to store and manage model data efficiently.
 
 ## Features
 - **Create Model:** Submit a JSON payload to create a new model.
 - **Retrieve Model:** Fetch the created model data.
+- **Caching:** Implements in-memory caching to store model data temporarily, enhancing performance and reducing unnecessary data processing.
 
 ## Installation
 
@@ -55,4 +56,4 @@ curl -X POST http://localhost:8080/model \
 curl http://localhost:8080/model
 ```
 ### License
-This project is licensed under the MIT License. 
+This project is licensed under the MIT License.
